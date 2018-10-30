@@ -93,10 +93,10 @@ function words {
 # Word Aliases for Weekly stats (relative to current day)
 
 alias wordsWeek1="git_words_added master@{7.days.ago}"
-alias wordsWeek2="git_words_added master@{14.days.ago}..master@{7.days.ago}"
-alias wordsWeek3="git_words_added master@{21.days.ago}..master@{14.days.ago}"
-alias wordsWeek4="git_words_added master@{28.days.ago}..master@{21.days.ago}"
-alias wordsWeek5="git_words_added master@{35.days.ago}..master@{28.days.ago}"
+alias wordsWeek2="git_words_added master@{2.weeks.ago}..master@{1.weeks.ago}"
+alias wordsWeek3="git_words_added master@{3.weeks.ago}..master@{2.weeks.ago}"
+alias wordsWeek4="git_words_added master@{4.weeks.ago}..master@{3.weeks.ago}"
+alias wordsWeek5="git_words_added master@{5.weeks.ago}..master@{4.weeks.ago}"
 
 function wordsMonth {
 	echo "    Last 7 days:" `wordsWeek1`
