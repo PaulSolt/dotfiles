@@ -7,7 +7,17 @@ export PATH
 
 # simple prompt
 # default macOS prompt is: \h:\W \u\$
+
 export PS1="\W \$ "
+
+# Color git branchname and dirty flag
+source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
+source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUPSTREAM="auto"
+GIT_PS1_SHOWCOLORHINTS="yes"
+export PS1='\W\[\033[32m\]$(__git_ps1)\[\033[00m\]$ '
+
 
 # enable Terminal color
 export CLICOLOR=1
@@ -38,6 +48,12 @@ alias ..="cd .."
 alias ...="cd ../.."
 
 alias reveal='open -R'
+
+# Git aliases
+alias status="git status"
+alias pull="git pull"
+alias push="git push"
+alias refresh="source ~/.bash_profile; echo Reloaded Bash Profile"
 
 # Open a file in xcode "xcode test.swift"
 alias xcode='open -a Xcode'
