@@ -20,3 +20,4 @@ Create a symlink to the files
 References
 
 * <https://stackoverflow.com/questions/20008354/version-controlling-bashrc-etc>
+* [Configuring bash scriptingosx.com](https://scriptingosx.com/2017/05/configuring-bash-with-aliases-and-functions/)
