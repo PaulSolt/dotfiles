@@ -90,6 +90,22 @@ function words {
 	wc -w C*.md
 }
 
+# Word Aliases for Weekly stats (relative to current day)
+
+alias wordsWeek1="git_words_added master@{7.days.ago}"
+alias wordsWeek2="git_words_added master@{14.days.ago}..master@{7.days.ago}"
+alias wordsWeek3="git_words_added master@{21.days.ago}..master@{14.days.ago}"
+alias wordsWeek4="git_words_added master@{28.days.ago}..master@{21.days.ago}"
+alias wordsWeek5="git_words_added master@{35.days.ago}..master@{28.days.ago}"
+
+function wordsMonth {
+	echo "    Last 7 days:" `wordsWeek1`
+	echo "    1 week ago: " `wordsWeek2`
+	echo "    2 weeks ago:" `wordsWeek3`
+	echo "    3 weeks ago:" `wordsWeek4`
+	echo "    4 weeks ago:" `wordsWeek5`
+}
+
 # Calculate writing word diff between revisions. Cribbed / modified from:
 # https://stackoverflow.com/questions/2874318/quantifying-the-amount-of-change-in-a-git-diff
 function git_words_added {
