@@ -58,6 +58,21 @@ alias refresh="source ~/.bash_profile; echo Reloaded Bash Profile"
 # Open a file in xcode "xcode test.swift"
 alias xcode='open -a Xcode'
 
+
+# Open Book Folders for Auto Layout Book 1
+alias cd1="cd /Users/paulsolt/book/Auto-Layout-Book-1"
+alias cd2="cd /Users/paulsolt/dev/Auto-Layout-Book"
+
+# Search a file or input for all markdown headings # ## and ###
+alias headings="grep -E '^[#]'"
+
+# Search a file for all markdown headings and bold headers
+alias titles="grep -E '^[#]|(\*\*)'"
+
+# Search a file for all TODO brackets of format [[TODO: edit the title]] 
+# or [[IMAGE: iPhone XS home screen]]
+alias todo="grep -E '^(\[\[)'"
+
 # PDF version of man pages
 function preman() {
 	man -t $@ | open -f -a "Preview"
