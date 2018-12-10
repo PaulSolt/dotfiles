@@ -50,7 +50,7 @@ alias ...="cd ../.."
 alias reveal='open -R'
 
 # Git aliases
-alias status="git status"
+alias gs="git status -sb"
 alias pull="git pull"
 alias push="git push"
 alias refresh="source ~/.bash_profile; echo Reloaded Bash Profile"
@@ -63,9 +63,7 @@ alias xcode='open -a Xcode'
 alias cd1="cd /Users/paulsolt/book/Auto-Layout-Book-1"
 alias cd2="cd /Users/paulsolt/dev/Auto-Layout-Book"
 
-# Search a file or input for all markdown headings # ## and ###
-alias headings="grep -E '^[#]'"
-
+# Markdown Book/Writing Helpers
 # Search a file for all markdown headings and bold headers
 alias titles="grep -E '^[#]|(\*\*)'"
 
