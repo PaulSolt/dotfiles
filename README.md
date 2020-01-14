@@ -1,6 +1,19 @@
 # dotfiles
 Bash scripts and other files backed up from the user director (~/)
 
+## Setup Mac
+
+1. Install [Homebrew](https://brew.sh) for installing commandline software
+
+2. Install [rbenv](https://github.com/rbenv/rbenv) (Ruby Environment) for installing newer versions of Ruby locally/globally
+
+		brew install rbenv
+
+3. Install Xcode Command line tools (included with Homebrew)
+
+		xcode-select --install
+
+
 ## Configure Local Machine
 
 1. Download from Github
