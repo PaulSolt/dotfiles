@@ -23,10 +23,22 @@ Bash scripts and other files backed up from the user director (~/)
 
 2. Setup Symlinks
 
+	**zsh**
+
+		ln -s dotfiles/.zshrc .zshrc
+
+	**bash**
+	
 		ln -s dotfiles/.bashrc .bashrc
 		ln -s dotfiles/.bash_profile .bash_profile
 
 3. Reload bash profile
+
+	**zsh**
+
+		source ~/.zshrc
+
+	**bash**
 
 		source ~/.bash_profile
 
@@ -43,10 +55,15 @@ Using version control makes this easier to download and setup
 
 Move files into `dotfiles`	
 
+
+	mv .zshrc dotfiles/
+
 	mv .bashrc dotfiles/
 	mv .bash_profile dotfiles/
 
 Create a symlink to the files
+
+	ln -s dotfiles/.zshrc .zshrc
 
 	ln -s dotfiles/.bashrc .bashrc
 	ln -s dotfiles/.bash_profile .bash_profile
