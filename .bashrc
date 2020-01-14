@@ -43,6 +43,16 @@ alias rm="rm -i"
 alias mv="mv -i"
 alias cp="cp -i"
 
+# Lambda School aliases
+alias cdios="cd /Users/paulsolt/Lambda/iOS/"
+alias cdios6="cd /Users/paulsolt/Lambda/iOS6/"
+alias cdios7="cd /Users/paulsolt/Lambda/iOS7/"
+alias cdios8="cd /Users/paulsolt/Lambda/iOS8/"
+alias cdios9="cd /Users/paulsolt/Lambda/iOS9/"
+alias cdios10="cd /Users/paulsolt/Lambda/iOS10/"
+alias cdios11="cd /Users/paulsolt/Lambda/iOS11/"
+alias cdios12="cd /Users/paulsolt/Lambda/iOS12/"
+
 # Easier typing to move up one or two directories
 alias ..="cd .."
 alias ...="cd ../.."
@@ -57,7 +67,7 @@ alias refresh="source ~/.bash_profile; echo Reloaded Bash Profile"
 
 # Open a file in xcode "xcode test.swift"
 alias xcode='open -a Xcode'
-
+alias beta='open -a Xcode-GM2'
 
 # Open Book Folders for Auto Layout Book 1
 alias cd1="cd /Users/paulsolt/book/Auto-Layout-Book-1"
