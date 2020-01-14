@@ -71,6 +71,15 @@ alias titles="grep -E '^[#]|(\*\*)'"
 # or [[IMAGE: iPhone XS home screen]]
 alias todo="grep -E '^(\[\[)'"
 
+
+# Playing with Scheme programming (MIT SICP)
+# https://groups.csail.mit.edu/mac/users/gjs/6.945/dont-panic/
+
+alias edwin="scheme --edit --heap 100000"
+
+alias emacs1="/usr/bin/emacs"
+
+
 # PDF version of man pages
 function preman() {
 	man -t $@ | open -f -a "Preview"
