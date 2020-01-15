@@ -21,7 +21,11 @@ Bash scripts and other files backed up from the user director (~/)
 		cd ~
 		git clone https://github.com/PaulSolt/dotfiles.git
 
-2. Setup Symlinks
+2. Install [oh-my-zsh](https://ohmyz.sh)
+
+		sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+2. Setup Symlinks (move old files to relink to dotfiles)
 
 	**zsh**
 
