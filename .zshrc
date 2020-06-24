@@ -120,6 +120,12 @@ alias cdios9="cd /Users/paulsolt/Lambda/iOS9/"
 alias cdios10="cd /Users/paulsolt/Lambda/iOS10/"
 alias cdios11="cd /Users/paulsolt/Lambda/iOS11/"
 alias cdios12="cd /Users/paulsolt/Lambda/iOS12/"
+alias cdios13="cd /Users/paulsolt/Lambda/iOS13/"
+alias cdios14="cd /Users/paulsolt/Lambda/iOS14/"
+alias cdios15="cd /Users/paulsolt/Lambda/iOS15/"
+alias cdios16="cd /Users/paulsolt/Lambda/iOS16/"
+alias cdios17="cd /Users/paulsolt/Lambda/iOS17/"
+alias cdios18="cd /Users/paulsolt/Lambda/iOS18/"
 
 
 function unit4 {
@@ -128,10 +134,10 @@ function unit4 {
 	mkdir -p "13-ios-media-programming/3-ios-video/class"
 	mkdir -p "13-ios-media-programming/4-mapkit/class"
 	
-	mkdir -p "14-objective-c-part1/1-intro-to-objc/class"
-	mkdir -p "14-objective-c-part1/2-objective-c-fundamentals/class"
-	mkdir -p "14-objective-c-part1/3-properties-categories/class"
-	mkdir -p "14-objective-c-part1/4-primitives-NSNumber/class"
+	mkdir -p "14-objective-c-part1/1-objc-fundamentals-i/class"
+	mkdir -p "14-objective-c-part1/2-objc-fundamentals-ii/class"
+	mkdir -p "14-objective-c-part1/3-data-modeling-in-objc/class"
+	mkdir -p "14-objective-c-part1/4-networking-in-objc/class"
 	
 	mkdir -p "15-objective-c-part2/1-swift-objc/class"
 	mkdir -p "15-objective-c-part2/2-kvo-kvc/class"
@@ -139,9 +145,21 @@ function unit4 {
 	mkdir -p "15-objective-c-part2/4-objective-c-review/class"
 }
 
+# Pass it the name and it'll create the folder and generate a starter Swift Package
+# $ newXcode MyAwesomeApp
+function newXcode {
+	projectName=$1
+	mkdir "$projectName"
+	cd "$projectName"
+	curl https://www.toptal.com/developers/gitignore/api/swift,xcode,macos > .gitignore
+	swift package init
+	swift package generate-xcodeproj
+	xcode .
+}
+
 # Easier typing to move up one or two directories
-alias ..="cd .."
-alias ...="cd ../.."
+# alias ..="cd .."
+# alias ...="cd ../.."
 
 alias reveal='open -R'
 
@@ -149,11 +167,11 @@ alias reveal='open -R'
 alias gs="git status -sb"
 alias pull="git pull"
 alias push="git push"
-alias refresh="source ~/.bash_profile; echo Reloaded Bash Profile"
+alias refresh="source ~/.zshrc; echo Reloaded .zshrc settings"
 
-# Open a file in xcode "xcode test.swift"
+# Open a file or directory in Xcode "xcode test.swift"
 alias xcode='open -a Xcode'
-alias beta='open -a Xcode-GM2'
+alias beta='open -a Xcode-Beta'
 
 # Open Book Folders for Auto Layout Book 1
 alias cd1="cd /Users/paulsolt/book/Auto-Layout-Book-1"
@@ -243,4 +261,6 @@ function git_words_diff {
 }
 
 
-
+# Hide warnings from Ruby 2.7.0 and Cocoapods (current issue: https://github.com/CocoaPods/CocoaPods/issues/9491)
+export RUBYOPT=-W0
+#export RUBYOPT=-W:no-deprecated
