@@ -111,39 +111,6 @@ alias rm="rm -i"
 alias mv="mv -i"
 alias cp="cp -i"
 
-# Lambda School aliases
-alias cdios="cd /Users/paulsolt/Lambda/iOS/"
-alias cdios6="cd /Users/paulsolt/Lambda/iOS6/"
-alias cdios7="cd /Users/paulsolt/Lambda/iOS7/"
-alias cdios8="cd /Users/paulsolt/Lambda/iOS8/"
-alias cdios9="cd /Users/paulsolt/Lambda/iOS9/"
-alias cdios10="cd /Users/paulsolt/Lambda/iOS10/"
-alias cdios11="cd /Users/paulsolt/Lambda/iOS11/"
-alias cdios12="cd /Users/paulsolt/Lambda/iOS12/"
-alias cdios13="cd /Users/paulsolt/Lambda/iOS13/"
-alias cdios14="cd /Users/paulsolt/Lambda/iOS14/"
-alias cdios15="cd /Users/paulsolt/Lambda/iOS15/"
-alias cdios16="cd /Users/paulsolt/Lambda/iOS16/"
-alias cdios17="cd /Users/paulsolt/Lambda/iOS17/"
-alias cdios18="cd /Users/paulsolt/Lambda/iOS18/"
-
-
-function unit4 {
-	mkdir -p "13-ios-media-programming/1-core-image/class"
-	mkdir -p "13-ios-media-programming/2-ios-audio/class"
-	mkdir -p "13-ios-media-programming/3-ios-video/class"
-	mkdir -p "13-ios-media-programming/4-mapkit/class"
-	
-	mkdir -p "14-objective-c-part1/1-objc-fundamentals-i/class"
-	mkdir -p "14-objective-c-part1/2-objc-fundamentals-ii/class"
-	mkdir -p "14-objective-c-part1/3-data-modeling-in-objc/class"
-	mkdir -p "14-objective-c-part1/4-networking-in-objc/class"
-	
-	mkdir -p "15-objective-c-part2/1-swift-objc/class"
-	mkdir -p "15-objective-c-part2/2-kvo-kvc/class"
-	mkdir -p "15-objective-c-part2/3-memory-management/class"
-	mkdir -p "15-objective-c-part2/4-objective-c-review/class"
-}
 
 # Pass it the name and it'll create the folder and generate a starter Swift Package
 # $ newXcode MyAwesomeApp
